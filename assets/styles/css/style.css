@@ -145,7 +145,7 @@ nav .nav-list li a:hover {
 }
 .container .banner {
   height: 400px;
-  background: no-repeat center/cover url(https://pr1.nicelocal.tw/k5_EnSGFBmuJUoOU2t9MAQ/640x340,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2Wil8yJT_SdvPT9llIb_uNhLZjlwB0nwg7IU1iUnEOtUqp4B41OuHc8keVuz-97XPw);
+  background: no-repeat center/cover url(../images/Pictures/bannerSample.jpg);
 }
 @media screen and (max-width: 500px) {
   .container .banner {
