@@ -153,6 +153,19 @@ nav {
                 transition: all .5s;
             }
         }
+
+        @media screen and (max-width: 576px) {
+            // display: none;
+            bottom: -4.5rem;
+            right: .5rem;
+
+            &:hover {
+                width: unset;
+                // padding-left: 0px;
+                right: .5rem;
+                transition: all .5s;
+            }
+        }
     }
 
     .banner {
@@ -161,21 +174,19 @@ nav {
 
         @media screen and (max-width: 576px) {
             height: 30vh;
-            width: calc(100vw);
+            // width: calc(100vw);
         }
     }
 
     #about {
         height: 700px;
-        // background-color: rgb(223, 223, 223);
         position: relative;
 
         @media screen and (max-width: 992px) {
-            width: calc(100vw);
+            position: unset;
             height: unset;
             position: unset;
-            display: flex;
-            flex-wrap: wrap;
+            display: block;
         }
 
         .board {
@@ -185,7 +196,7 @@ nav {
             padding: 3rem 4.5rem;
 
             @media screen and (max-width: 992px) {
-                width: calc(100vw);
+                width: unset;
             }
 
             @media screen and (max-width: 576px) {
@@ -204,7 +215,7 @@ nav {
 
             ul {
                 // list-style-type: none;
-                padding: 1.5rem 1rem;
+                padding: 1.5rem 2rem;
 
                 li {
                     padding: .5rem;

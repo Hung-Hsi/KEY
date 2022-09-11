@@ -163,6 +163,18 @@ nav .nav-list li a:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+@media screen and (max-width: 576px) {
+  .container .top-btn-side {
+    bottom: -4.5rem;
+    right: 0.5rem;
+  }
+  .container .top-btn-side:hover {
+    width: unset;
+    right: 0.5rem;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+}
 .container .banner {
   height: 400px;
   background: no-repeat center/cover url(../images/Pictures/bannerSample.jpg);
@@ -170,7 +182,6 @@ nav .nav-list li a:hover {
 @media screen and (max-width: 576px) {
   .container .banner {
     height: 30vh;
-    width: 100vw;
   }
 }
 .container #about {
@@ -179,14 +190,10 @@ nav .nav-list li a:hover {
 }
 @media screen and (max-width: 992px) {
   .container #about {
-    width: 100vw;
+    position: unset;
     height: unset;
     position: unset;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: block;
   }
 }
 .container #about .board {
@@ -197,7 +204,7 @@ nav .nav-list li a:hover {
 }
 @media screen and (max-width: 992px) {
   .container #about .board {
-    width: 100vw;
+    width: unset;
   }
 }
 @media screen and (max-width: 576px) {
@@ -213,7 +220,7 @@ nav .nav-list li a:hover {
   font-weight: 400;
 }
 .container #about .news ul {
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 .container #about .news ul li {
   padding: 0.5rem;
