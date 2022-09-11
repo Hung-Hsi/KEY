@@ -177,6 +177,11 @@ nav .nav-list li a:hover {
     transition: all 0.5s;
   }
 }
+@media screen and (max-width: 375px) {
+  .container .top-btn-side:hover {
+    opacity: 0.5;
+  }
+}
 .container .banner {
   height: 400px;
   background: no-repeat center/cover url(../images/Pictures/bannerSample.jpg);
