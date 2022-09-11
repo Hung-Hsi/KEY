@@ -31,7 +31,7 @@ nav {
             }
         }
 
-        width: calc(100vw - 17px);
+        width: calc(100vw);
         margin: auto;
         position: fixed;
         background-color: #ffffff;
@@ -108,22 +108,18 @@ nav {
                 text-decoration: none;
                 border-radius: 2rem;
                 transition: all .5s ease;
-                
+
                 &:hover {
                     background-color: rgba(199, 199, 199, 0.15);
                     color: rgb(47, 0, 255);
                 }
-                
+
                 @media screen and (max-width:865px) {
                     width: 100vw;
                     text-align: center;
                     border-radius: unset;
                 }
             }
-
-            // .active {
-            //     color: rgb(47, 0, 255);
-            // }
         }
     }
 }
@@ -133,19 +129,32 @@ nav {
     padding: 0;
     position: relative;
 
-    .top-btn {
+    .top-btn-side {
+        width: 100px;
+        height: 100vh;
         position: fixed;
         bottom: 5rem;
-        right: 1rem;
+        right: -1.7rem;
+        padding-top: 85vh;
+        padding-left: 50px;
+        &:hover {
+            width: 60px;
+            padding-left: 0px;
+            right: 0rem;
+            transition: all .5s;
+        }
+        .top-btn {
+
+        }
     }
 
     .banner {
         height: 400px;
         background: no-repeat center/cover url(../images/Pictures/bannerSample.jpg);
 
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 576px) {
             height: 30vh;
-            width: calc(100vw - 17px);
+            width: calc(100vw);
         }
     }
 
@@ -154,8 +163,8 @@ nav {
         // background-color: rgb(223, 223, 223);
         position: relative;
 
-        @media screen and (max-width: 1000px) {
-            width: calc(100vw - 17px);
+        @media screen and (max-width: 992px) {
+            width: calc(100vw);
             height: unset;
             position: unset;
             display: flex;
@@ -168,11 +177,11 @@ nav {
             max-height: 850px;
             padding: 3rem 4.5rem;
 
-            @media screen and (max-width: 1000px) {
-                width: calc(100vw - 17px);
+            @media screen and (max-width: 992px) {
+                width: calc(100vw);
             }
 
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 576px) {
                 padding: 3rem 1.5rem;
             }
         }
@@ -202,7 +211,7 @@ nav {
             right: 0;
             bottom: 0;
 
-            @media screen and (max-width: 1000px) {
+            @media screen and (max-width: 992px) {
                 position: unset;
             }
 
@@ -280,6 +289,10 @@ nav {
 
     #info {
         padding: 3rem 4.5rem;
+
+        @media screen and (max-width: 576px) {
+            padding: 3rem 1.5rem;
+        }
 
         .tab {
             position: relative;
@@ -363,7 +376,14 @@ nav {
 
     #brand {
         padding: 3rem 4.5rem;
-        // background-color: antiquewhite;
+
+        @media screen and (max-width: 576px) {
+            padding: 3rem 0rem;
+
+            h2 {
+                padding: 0rem 1.5rem;
+            }
+        }
 
         .pd-brand {
             margin-top: 2rem;
@@ -451,7 +471,7 @@ nav {
             margin-left: 5rem;
 
             @media screen and (max-width:997px) {
-                margin: 3rem;
+                margin: 3rem 0;
             }
 
             display: flex;
@@ -505,7 +525,8 @@ footer {
 
         .contact-icon:hover {
             transform: scale(1.1);
-            img{
+
+            img {
                 opacity: .3;
             }
         }

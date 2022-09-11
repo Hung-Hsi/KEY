@@ -25,7 +25,7 @@ nav {
   z-index: 3;
 }
 nav .navbar {
-  width: calc(100vw - 17px);
+  width: 100vw;
   margin: auto;
   position: fixed;
   background-color: #ffffff;
@@ -139,28 +139,39 @@ nav .nav-list li a:hover {
   padding: 0;
   position: relative;
 }
-.container .top-btn {
+.container .top-btn-side {
+  width: 100px;
+  height: 100vh;
   position: fixed;
   bottom: 5rem;
-  right: 1rem;
+  right: -1.7rem;
+  padding-top: 85vh;
+  padding-left: 50px;
+}
+.container .top-btn-side:hover {
+  width: 60px;
+  padding-left: 0px;
+  right: 0rem;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .container .banner {
   height: 400px;
   background: no-repeat center/cover url(../images/Pictures/bannerSample.jpg);
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   .container .banner {
     height: 30vh;
-    width: calc(100vw - 17px);
+    width: 100vw;
   }
 }
 .container #about {
   height: 700px;
   position: relative;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   .container #about {
-    width: calc(100vw - 17px);
+    width: 100vw;
     height: unset;
     position: unset;
     display: -webkit-box;
@@ -176,12 +187,12 @@ nav .nav-list li a:hover {
   max-height: 850px;
   padding: 3rem 4.5rem;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   .container #about .board {
-    width: calc(100vw - 17px);
+    width: 100vw;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 576px) {
   .container #about .board {
     padding: 3rem 1.5rem;
   }
@@ -205,7 +216,7 @@ nav .nav-list li a:hover {
   right: 0;
   bottom: 0;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
   .container #about .about {
     position: unset;
   }
@@ -281,6 +292,11 @@ nav .nav-list li a:hover {
 }
 .container #info {
   padding: 3rem 4.5rem;
+}
+@media screen and (max-width: 576px) {
+  .container #info {
+    padding: 3rem 1.5rem;
+  }
 }
 .container #info .tab {
   position: relative;
@@ -358,6 +374,14 @@ nav .nav-list li a:hover {
 }
 .container #brand {
   padding: 3rem 4.5rem;
+}
+@media screen and (max-width: 576px) {
+  .container #brand {
+    padding: 3rem 0rem;
+  }
+  .container #brand h2 {
+    padding: 0rem 1.5rem;
+  }
 }
 .container #brand .pd-brand {
   margin-top: 2rem;
@@ -459,7 +483,7 @@ nav .nav-list li a:hover {
 }
 @media screen and (max-width: 997px) {
   .container #contact .contact-box {
-    margin: 3rem;
+    margin: 3rem 0;
   }
 }
 .container #contact .contact-box .contact-info {
