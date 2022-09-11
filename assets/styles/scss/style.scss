@@ -206,6 +206,7 @@ nav {
 
             @media screen and (max-width: 992px) {
                 width: unset;
+                // height: unset;
             }
 
             @media screen and (max-width: 576px) {
@@ -244,7 +245,7 @@ nav {
 
 
             .text-box {
-                padding: 1rem 2rem 4rem 2rem;
+                padding: .5rem 1rem 1rem 1rem;
                 position: relative;
                 // font-size: 1.3rem;
 
@@ -253,19 +254,19 @@ nav {
                     height: 5rem;
                 }
 
-                .about-btn {
-                    // font-size: 1.2rem;
-                    padding: .2rem .5rem;
-                    position: absolute;
-                    bottom: 1rem;
-                    right: 0;
-                    border: none;
+                // .about-btn {
+                //     // font-size: 1.2rem;
+                //     padding: .2rem .5rem;
+                //     position: absolute;
+                //     bottom: 1rem;
+                //     right: 0;
+                //     border: none;
 
-                    &:hover {
-                        background-color: rgba(230, 230, 230, 1);
-                        transform: scale(1.1);
-                    }
-                }
+                //     &:hover {
+                //         background-color: rgba(230, 230, 230, 1);
+                //         transform: scale(1.1);
+                //     }
+                // }
             }
 
             .serve {
@@ -278,10 +279,11 @@ nav {
                 .keys,
                 .others {
                     display: flex;
+                    justify-content: center;
 
                     .serve-item {
                         margin: .5rem;
-                        width: 130px;
+                        width: 120px;
                         height: 50px;
                         // font-size: 1.2rem;
                         text-align: center;
@@ -300,7 +302,7 @@ nav {
                     @media screen and (max-width: 576px) {
                         .serve-item {
                             width: 100px;
-                            height: 50px;
+                            margin: .5rem;
                         }
 
                         .door {
@@ -308,13 +310,16 @@ nav {
                         }
                     }
                 }
+                .others{
+                    flex-wrap: wrap;
+                }
 
                 a {
                     // font-size: 1.2rem;
                     align-self: flex-end;
                     text-decoration: none;
                     color: rgba(0, 0, 255, 1);
-                    margin-top: 1rem;
+                    margin-top: 1.5rem;
 
                     &:hover {
                         border: 1px dashed rgba(0, 0, 255, 1);

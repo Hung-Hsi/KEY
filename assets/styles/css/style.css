@@ -244,24 +244,12 @@ nav .nav-list li a:hover {
   }
 }
 .container #about .about .text-box {
-  padding: 1rem 2rem 4rem 2rem;
+  padding: 0.5rem 1rem 1rem 1rem;
   position: relative;
 }
 .container #about .about .text-box .text {
   overflow-y: auto;
   height: 5rem;
-}
-.container #about .about .text-box .about-btn {
-  padding: 0.2rem 0.5rem;
-  position: absolute;
-  bottom: 1rem;
-  right: 0;
-  border: none;
-}
-.container #about .about .text-box .about-btn:hover {
-  background-color: rgb(230, 230, 230);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 .container #about .about .serve {
   padding: 1rem 0;
@@ -281,11 +269,14 @@ nav .nav-list li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .container #about .about .serve .keys .serve-item,
 .container #about .about .serve .others .serve-item {
   margin: 0.5rem;
-  width: 130px;
+  width: 120px;
   height: 50px;
   text-align: center;
   line-height: 50px;
@@ -303,19 +294,23 @@ nav .nav-list li a:hover {
   .container #about .about .serve .keys .serve-item,
 .container #about .about .serve .others .serve-item {
     width: 100px;
-    height: 50px;
+    margin: 0.5rem;
   }
   .container #about .about .serve .keys .door,
 .container #about .about .serve .others .door {
     width: 120px;
   }
 }
+.container #about .about .serve .others {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 .container #about .about .serve a {
   -ms-flex-item-align: end;
       align-self: flex-end;
   text-decoration: none;
   color: rgb(0, 0, 255);
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .container #about .about .serve a:hover {
   border: 1px dashed rgb(0, 0, 255);
