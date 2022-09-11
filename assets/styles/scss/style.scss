@@ -179,7 +179,7 @@ nav {
 
     .banner {
         height: 400px;
-        background: no-repeat center/cover url(../images/Pictures/bannerSample.jpg);
+        background: no-repeat center/contain url(../images/Icons/Name-card.png);
 
         @media screen and (max-width: 576px) {
             height: 30vh;
