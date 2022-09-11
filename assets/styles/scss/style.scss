@@ -145,7 +145,14 @@ nav {
             transition: all .5s;
         }
 
-        .top-btn {}
+        .top-btn {
+            opacity: .5;
+
+            &:hover {
+                opacity: 1;
+                transition: all .5s;
+            }
+        }
     }
 
     .banner {
