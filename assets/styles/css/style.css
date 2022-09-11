@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "myFont";
-  src: url(/assets/plugins/字體/清松手寫體4.ttf);
+  src: url(../../plugins/字體/清松手寫體4.ttf);
 }
 * {
   -webkit-box-sizing: border-box;
@@ -106,7 +106,7 @@ nav .nav-list {
     position: absolute;
     top: 4.5rem;
     right: 0rem;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.7);
   }
 }
 nav .nav-list li {
@@ -123,13 +123,14 @@ nav .nav-list li a {
   transition: all 0.5s ease;
 }
 nav .nav-list li a:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(199, 199, 199, 0.15);
   color: rgb(47, 0, 255);
 }
 @media screen and (max-width: 865px) {
   nav .nav-list li a {
     width: 100vw;
     text-align: center;
+    border-radius: unset;
   }
 }
 
@@ -150,6 +151,7 @@ nav .nav-list li a:hover {
 @media screen and (max-width: 500px) {
   .container .banner {
     height: 30vh;
+    width: calc(100vw - 17px);
   }
 }
 .container #about {

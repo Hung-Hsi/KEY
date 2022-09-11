@@ -1,6 +1,6 @@
 @font-face {
     font-family: "myFont";
-    src: url(/assets/plugins/字體/清松手寫體4.ttf)
+    src: url(../../plugins/字體/清松手寫體4.ttf)
 }
 
 * {
@@ -96,7 +96,7 @@ nav {
             position: absolute;
             top: 4.5rem;
             right: 0rem;
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.7);
         }
 
         li {
@@ -108,15 +108,16 @@ nav {
                 text-decoration: none;
                 border-radius: 2rem;
                 transition: all .5s ease;
-
+                
                 &:hover {
-                    background-color: rgb(255, 255, 255);
+                    background-color: rgba(199, 199, 199, 0.15);
                     color: rgb(47, 0, 255);
                 }
-
+                
                 @media screen and (max-width:865px) {
                     width: 100vw;
                     text-align: center;
+                    border-radius: unset;
                 }
             }
 
@@ -144,6 +145,7 @@ nav {
 
         @media screen and (max-width: 500px) {
             height: 30vh;
+            width: calc(100vw - 17px);
         }
     }
 
