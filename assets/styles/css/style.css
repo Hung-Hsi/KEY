@@ -507,7 +507,9 @@ footer .Icons {
 footer .Icons .contact-icon:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  margin: 0 0.5rem;
+}
+footer .Icons .contact-icon:hover img {
+  opacity: 0.3;
 }
 footer .Icons .FootLogo {
   height: 3.3rem;
