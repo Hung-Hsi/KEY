@@ -34,7 +34,7 @@ nav {
         width: calc(100vw);
         margin: auto;
         position: fixed;
-        background-color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.9);
         padding: .2rem 5%;
         display: flex;
         flex-wrap: wrap;
@@ -55,7 +55,7 @@ nav {
         border: .5px dotted rgba(34, 34, 34, 0.5);
         width: 36px;
         height: 36px;
-        background: rgb(255, 255, 255);
+        background: rgb(230, 230, 230);
         padding: 6px;
         text-align: center;
         cursor: pointer;
@@ -66,7 +66,7 @@ nav {
         }
 
         &:hover:before {
-            color: #eceff3;
+            color:rgba(255, 255, 255, 1);
         }
 
         &::before {
@@ -96,7 +96,7 @@ nav {
             position: absolute;
             top: 4.5rem;
             right: 0rem;
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: rgba(255, 255, 255, 0.8);
         }
 
         li {
@@ -110,7 +110,7 @@ nav {
                 transition: all .5s ease;
 
                 &:hover {
-                    background-color: rgba(255, 255, 255, 0.7);
+                    background-color: rgba(245, 245, 245, 01);
                     color: rgb(47, 0, 255);
                 }
 
@@ -123,437 +123,6 @@ nav {
         }
     }
 }
-
-.container {
-    font-size: 1.2rem;
-    padding: 0;
-    position: relative;
-
-    .top-btn-side {
-        width: 100px;
-        height: 100vh;
-        position: fixed;
-        bottom: 5rem;
-        right: -1.7rem;
-        padding-top: 85vh;
-        padding-left: 50px;
-
-        &:hover {
-            width: 60px;
-            padding-left: 0px;
-            right: 0rem;
-            transition: all .5s;
-        }
-
-        .top-btn {
-            opacity: .5;
-
-            &:hover {
-                opacity: 1;
-                transition: all .5s;
-            }
-        }
-
-        @media screen and (max-width: 576px) {
-            // display: none;
-            width: unset;
-            height: unset;
-            padding: unset;
-            bottom: 1rem;
-            right: .5rem;
-
-            &:hover {
-                width: unset;
-                // padding-left: 0px;
-                right: .5rem;
-                transition: all .5s;
-            }
-        }
-
-        @media screen and (max-width: 415px) {
-            &:hover {
-                opacity: .5;
-            }
-        }
-    }
-
-    .banner {
-        height: 400px;
-        background: no-repeat center/contain url(../images/Icons/Name-card.png);
-
-        @media screen and (max-width: 576px) {
-            height: 30vh;
-            // width: calc(100vw);
-        }
-    }
-
-    #about {
-        height: 700px;
-        position: relative;
-
-        @media screen and (max-width: 992px) {
-            position: unset;
-            height: unset;
-            position: unset;
-            display: block;
-        }
-
-        .board {
-            width: 53vw;
-            height: 500px;
-            max-height: 850px;
-            padding: 3rem 4.5rem;
-
-            @media screen and (max-width: 992px) {
-                width: unset;
-                // height: unset;
-            }
-
-            @media screen and (max-width: 576px) {
-                padding: 3rem 1.5rem;
-            }
-        }
-
-        .news {
-            background-color: rgb(95, 95, 95);
-
-            h2 {
-                font-weight: 400;
-            }
-
-            color: #ffffff;
-
-            ul {
-                // list-style-type: none;
-                padding: 1.5rem 2rem;
-
-                li {
-                    padding: .5rem;
-                }
-            }
-        }
-
-        .about {
-            background-color: rgb(197, 197, 197);
-            position: absolute;
-            right: 0;
-            bottom: 0;
-
-            @media screen and (max-width: 992px) {
-                position: unset;
-            }
-
-
-            .text-box {
-                padding: .5rem 1rem 1rem 1rem;
-                position: relative;
-                // font-size: 1.3rem;
-
-                .text {
-                    overflow-y: auto;
-                    height: 5rem;
-                }
-
-                // .about-btn {
-                //     // font-size: 1.2rem;
-                //     padding: .2rem .5rem;
-                //     position: absolute;
-                //     bottom: 1rem;
-                //     right: 0;
-                //     border: none;
-
-                //     &:hover {
-                //         background-color: rgba(230, 230, 230, 1);
-                //         transform: scale(1.1);
-                //     }
-                // }
-            }
-
-            .serve {
-                padding: 1rem 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-
-                .keys,
-                .others {
-                    display: flex;
-                    justify-content: center;
-
-                    .serve-item {
-                        margin: .5rem;
-                        width: 120px;
-                        height: 50px;
-                        // font-size: 1.2rem;
-                        text-align: center;
-                        line-height: 50px;
-                        border-radius: 2rem;
-                        background-color: #fff;
-                        cursor: pointer;
-
-                        &:hover {
-                            background-color: rgba(255, 255, 255, 0.8);
-                            transform: scale(1.1);
-                        }
-
-                    }
-
-                    @media screen and (max-width: 576px) {
-                        .serve-item {
-                            width: 100px;
-                            margin: .5rem;
-                        }
-
-                        .door {
-                            width: 120px;
-                        }
-                    }
-                }
-                .others{
-                    flex-wrap: wrap;
-                }
-
-                a {
-                    // font-size: 1.2rem;
-                    align-self: flex-end;
-                    text-decoration: none;
-                    color: rgba(0, 0, 255, 1);
-                    margin-top: 1.5rem;
-
-                    &:hover {
-                        border: 1px dashed rgba(0, 0, 255, 1);
-                        color: rgba(0, 0, 255, 0.8);
-                        transform: scale(1.1);
-                    }
-                }
-            }
-        }
-    }
-
-    #info {
-        padding: 3rem 4.5rem;
-
-        @media screen and (max-width: 576px) {
-            padding: 3rem 1.5rem;
-        }
-
-        .tab {
-            position: relative;
-            margin-top: 2rem;
-            overflow: hidden;
-
-            &::before {
-                content: "";
-                width: 100vw;
-                height: 2px;
-                background-color: black;
-                position: absolute;
-                bottom: 0;
-            }
-
-            .tablinks {
-                background-color: #ddd;
-                border: none;
-                border-radius: 10px 10px 0 0;
-                outline: none;
-                cursor: pointer;
-                padding: 14px 16px;
-                transition: 0.3s;
-                font-size: 1.2rem;
-
-                &:hover {
-                    background-color: rgb(62, 186, 235);
-                }
-
-                &.active {
-                    background-color: bisque;
-                }
-            }
-
-
-        }
-
-        .tabcontent {
-            display: none;
-            // padding: 2rem 0rem;
-            // border: 1px solid #ccc;
-            border-top: none;
-            justify-content: center;
-            text-align: center;
-
-            &.active {
-                display: flex;
-            }
-
-            .card-box {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                // border: 1px solid #000;
-                overflow: auto;
-                height: 320px;
-
-                .card {
-                    margin: 1rem;
-                    display: flex;
-                    flex-direction: column;
-                    // width: 20vw;
-                    // height: 200px;
-                }
-
-                .one {
-                    background-color: aquamarine;
-                }
-
-                .two {
-                    background-color: rgb(117, 141, 133);
-                }
-
-                .three {
-                    background-color: rgb(46, 56, 53);
-                }
-            }
-        }
-
-    }
-
-    #brand {
-        padding: 3rem 4.5rem;
-
-        @media screen and (max-width: 576px) {
-            padding: 3rem 0rem;
-
-            h2 {
-                padding: 0rem 1.5rem;
-            }
-        }
-
-        .pd-brand {
-            margin-top: 2rem;
-
-            align-items: center;
-            // background: #E3E3E3;
-            display: flex;
-            justify-content: center;
-
-            @mixin white-gradient {
-                background: linear-gradient(to right, rgba(255, 248, 183, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-            }
-
-            $animationSpeed: 30s;
-
-            // Animation
-            @keyframes scroll {
-                0% {
-                    transform: translateX(0);
-                }
-
-                100% {
-                    transform: translateX(calc(-250px * 3))
-                }
-            }
-
-
-            // Styling
-            .slider {
-                // background: rgb(255, 246, 161);
-                box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-                height: 100px;
-                overflow: hidden;
-                position: relative;
-                // margin: auto;
-                // width: 960px;
-
-                &::before,
-                &::after {
-                    @include white-gradient;
-                    content: "";
-                    height: 100px;
-                    position: absolute;
-                    width: 100px;
-                    z-index: 2;
-                }
-
-                &::after {
-                    right: 0;
-                    top: 0;
-                    transform: rotateZ(180deg);
-                }
-
-                &::before {
-                    left: 0;
-                    top: 0;
-                }
-
-                .slide-track {
-                    animation: scroll $animationSpeed linear infinite;
-                    display: flex;
-                    width: 100vw;
-                    width: calc(250px * 3);
-
-                    .slide {
-                        height: 100px;
-                        width: 250px;
-                    }
-                }
-            }
-        }
-    }
-
-    #contact {
-        padding: 3rem 0rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        iframe {
-            border-radius: 20px;
-        }
-
-        .contact-box {
-            margin-left: 5rem;
-
-            @media screen and (max-width:997px) {
-                margin: 3rem 0;
-            }
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            .contact-info {
-                padding: 1rem 2rem;
-
-                .p1 {
-                    margin: .3rem 0;
-                }
-
-                .p2 {
-                    margin-top: -.5rem;
-                }
-
-                .open-time {
-                    text-align: right;
-                }
-
-                a {
-                    text-decoration: none;
-                    color: black;
-                }
-
-                .QRcode:hover {
-
-                    img,
-                    .p2 {
-                        color: blue;
-                    }
-                }
-            }
-        }
-    }
-}
-
 
 footer {
     padding: 1.5rem 0 .5rem 0;
@@ -596,3 +165,12 @@ footer {
         margin-top: 1rem;
     }
 }
+
+.container {
+    font-size: 1.2rem;
+    padding: 0;
+    position: relative;
+}
+
+@import './pages/homepage.scss';
+@import './pages/product.scss';
