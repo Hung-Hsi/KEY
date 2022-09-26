@@ -19,6 +19,27 @@ html {
     }
 }
 
+/* scrollbar setting */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(230, 230, 230);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
 nav {
     height: 87px;
     // position: relative;
@@ -35,7 +56,7 @@ nav {
             }
         }
 
-        width: calc(100vw);
+        // width: calc(100vw);
         margin: auto;
         padding: .2rem 5%;
         display: flex;
@@ -55,6 +76,7 @@ nav {
 
     .nav-btn {
         border: .5px dotted rgba(34, 34, 34, 0.5);
+        border-radius: 15%;
         width: 36px;
         height: 36px;
         background: rgb(230, 230, 230);
@@ -90,7 +112,6 @@ nav {
         list-style-type: none;
         padding-left: 1rem;
         justify-items: flex-end;
-        box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
 
         @media screen and (max-width:865px) {
             display: none;
@@ -100,6 +121,7 @@ nav {
             top: 4.5rem;
             right: 0rem;
             background-color: rgba(255, 255, 255, 1);
+            box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
         }
 
         li {
@@ -113,7 +135,6 @@ nav {
                 transition: all .5s ease;
 
                 &:hover {
-                    background-color: rgba(245, 245, 245, 01);
                     color: rgb(47, 0, 255);
                 }
 
@@ -121,6 +142,10 @@ nav {
                     width: 100vw;
                     text-align: center;
                     border-radius: unset;
+
+                    &:hover {
+                        background-color: rgba(245, 245, 245, 01);
+                    }
                 }
             }
         }
