@@ -21,14 +21,16 @@ html h2 {
 
 nav {
   height: 87px;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 3;
+  -webkit-box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
+          box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
+  background-color: rgba(255, 255, 255, 0.9);
 }
 nav .navbar {
   width: 100vw;
   margin: auto;
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.9);
   padding: 0.2rem 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,6 +96,8 @@ nav .nav-list {
   list-style-type: none;
   padding-left: 1rem;
   justify-items: flex-end;
+  -webkit-box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
+          box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
 }
 @media screen and (max-width: 865px) {
   nav .nav-list {
@@ -105,7 +109,7 @@ nav .nav-list {
     position: absolute;
     top: 4.5rem;
     right: 0rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
   }
 }
 nav .nav-list li {
