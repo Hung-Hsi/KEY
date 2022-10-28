@@ -1,0 +1,87 @@
+section.container {
+
+    .tittle {
+        padding: 3rem 4.5rem;
+        align-self: flex-start;
+    }
+
+    div.main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .mainProduct {
+            min-height: 80vh;
+            width: 90%;
+            display: flex;
+            flex: 1 1 200px;
+            // justify-content: center;
+
+            .brandLinks {
+                width: 20%;
+
+                ul {
+                    li {
+                        list-style-type: none;
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+
+                            &.active {
+                                color: rgb(47, 0, 255)
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tabcontent {
+                display: none;
+                // padding: 2rem 0rem;
+                // border: 1px solid #ccc;
+                border-top: none;
+                justify-content: center;
+                text-align: center;
+
+                &.active {
+                    display: flex;
+                }
+
+                .card-box {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    // border: 1px solid #000;
+                    overflow: auto;
+                    height: 320px;
+
+                    .card {
+                        margin: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        // width: 20vw;
+                        // height: 200px;
+
+                        &:hover {
+                            transform: scale(1.05);
+                        }
+                    }
+
+                    .one {
+                        background-color: aquamarine;
+                    }
+
+                    .two {
+                        background-color: rgb(117, 141, 133);
+                    }
+
+                    .three {
+                        background-color: rgb(46, 56, 53);
+                    }
+                }
+            }
+        }
+    }
+}

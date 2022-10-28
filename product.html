@@ -53,52 +53,55 @@
         <div class="tittle">
             <h2>產品訊息</h2>
         </div>
-        <div class="mainProduct">
-            <div class="brandTab">
-                <ul>
-                    <li>
-                        <button class="tablinks active" onclick="pdItem(event, 'A1')">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="tablinks" onclick="pdItem(event, 'A2')">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="tablinks" onclick="pdItem(event, 'A3')">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="tablinks" onclick="pdItem(event, 'A4')">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="tablinks" onclick="pdItem(event, 'A5')">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="tablinks" onclick="pdItem(event, 'A6')">
-                        </button>
-                    </li>
-                </ul>
+
+        <div class="main">
+            <div class="mainProduct">
+                <div class="brandLinks">
+                    <ul>
+                        <li><a class="active" href="#">東隆</a></li>
+                        <li><a href="">美樂</a></li>
+                        <li><a href="">飛波</a></li>
+                        <li><a href="">耶魯</a></li>
+                        <li><a href="">維夫拉克</a></li>
+                        <li><a href="">EPIC</a></li>
+                    </ul>
+                </div>
+
+                <div id="page1" class="tabcontent active">
+                    <div class="card-box">
+                        <div class="card one">
+                            <img src="https://fakeimg.pl/200x250/">
+                            <span>###</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page2" class="tabcontent">
+                    <div class="card-box">
+                        <div class="card two">
+                            <img src="https://fakeimg.pl/200x250/">
+                            <span>###</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="page3" class="tabcontent">
+                    <div class="card-box">
+                        <div class="card three">
+                            <img src="https://fakeimg.pl/200x250/">
+                            <span>###</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="products">
-                <div id="A1" class="tabcontent active"></div>
-            </div>
-            <div class="products">
-                <div id="A2" class="tabcontent"></div>
-            </div>
-            <div class="products">
-                <div id="A3" class="tabcontent"></div>
-            </div>
-            <div class="products">
-                <div id="A4" class="tabcontent"></div>
-            </div>
-            <div class="products">
-                <div id="A5" class="tabcontent"></div>
-            </div>
-            <div class="products">
-                <div id="A6" class="tabcontent"></div>
+
+            <div class="pageLinks">
+                <button class="tablinks active" onclick="pdItem(event, 'page1')"><span> 1 </span>
+                </button>
+                <button class="tablinks" onclick="pdItem(event, 'page2')"><span> 2 </span>
+                </button>
+                <button class="tablinks" onclick="pdItem(event, 'page3')"><span> 3 </span>
+                </button>
             </div>
         </div>
     </section>
