@@ -3,18 +3,12 @@
 <html lang="zh-Hant">
 
 <head>
-    <!--~ 編碼 -->
     <meta charset="UTF-8">
-    <!--~ 視窗 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--~ 讓搜尋引擎能找到網頁 -->
     <meta name="robots" content="index, follow">
-    <!--~ 瀏覽器搜尋上會顯示網站描述 -->
     <meta name="description" content="鑰匙複製。無樣配鎖。開鎖。換鎖。捲門遙控安裝。遙控感應豆拷貝。金庫號碼。各式印章製作。">
-    <!--~ 網頁作者署名 -->
     <meta name="author" content="Hung-Hsi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!--~ <base> 用來設定整個頁面中，所有連結類型的屬性的預設根網址 (base URL) 和預設連結目標 (base target) -->
     <!-- <base  href="https://www.google.com/" target="_blank"> -->
     <!--~ Page icon goes here -->
     <link rel="shortcut icon" href="./assets/styles/images/Icons/LOGO.jpg">
@@ -55,6 +49,59 @@
             </ul>
         </div>
     </nav>
+    <section class="container">
+        <div class="tittle">
+            <h2>產品訊息</h2>
+        </div>
+        <div class="mainProduct">
+            <div class="brandTab">
+                <ul>
+                    <li>
+                        <button class="tablinks active" onclick="pdItem(event, 'A1')">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tablinks" onclick="pdItem(event, 'A2')">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tablinks" onclick="pdItem(event, 'A3')">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tablinks" onclick="pdItem(event, 'A4')">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tablinks" onclick="pdItem(event, 'A5')">
+                        </button>
+                    </li>
+                    <li>
+                        <button class="tablinks" onclick="pdItem(event, 'A6')">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="products">
+                <div id="A1" class="tabcontent active"></div>
+            </div>
+            <div class="products">
+                <div id="A2" class="tabcontent"></div>
+            </div>
+            <div class="products">
+                <div id="A3" class="tabcontent"></div>
+            </div>
+            <div class="products">
+                <div id="A4" class="tabcontent"></div>
+            </div>
+            <div class="products">
+                <div id="A5" class="tabcontent"></div>
+            </div>
+            <div class="products">
+                <div id="A6" class="tabcontent"></div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="Icons">
@@ -75,6 +122,28 @@
         <div class="copyright">COPYRIGHT© 長榮鎖印行 1991</div>
     </footer>
 
+    <!-- function pdItem -->
+    <script>function pdItem(evt, itemName) {
+            // Declare all variables
+            let i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(itemName).style.display = "flex";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 
 </html>
