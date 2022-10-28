@@ -13,14 +13,19 @@ section.container {
 
         .mainProduct {
             min-height: 80vh;
-            width: 90%;
+            width: 100%;
             display: flex;
-            flex: 1 1 200px;
-            // justify-content: center;
+            // justify-content: space-around;
 
             .brandLinks {
-                width: 20%;
-
+                margin: 0 2rem;
+                padding: 1.5rem .5rem;
+                border: 1px solid #000;
+                flex: 0.5 0 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
                 ul {
                     li {
                         list-style-type: none;
@@ -38,11 +43,10 @@ section.container {
             }
 
             .tabcontent {
+                flex: 5 1 650px;
                 display: none;
-                // padding: 2rem 0rem;
-                // border: 1px solid #ccc;
                 border-top: none;
-                justify-content: center;
+                // justify-content: center;
                 text-align: center;
 
                 &.active {
@@ -52,9 +56,8 @@ section.container {
                 .card-box {
                     display: flex;
                     flex-wrap: wrap;
-                    justify-content: center;
-                    // border: 1px solid #000;
-                    overflow: auto;
+                    // justify-content: center;
+                    // overflow: auto;
                     height: 320px;
 
                     .card {
