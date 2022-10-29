@@ -200,5 +200,55 @@ footer {
     position: relative;
 }
 
+.top-btn-side {
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    bottom: 5rem;
+    right: -1.7rem;
+    padding-top: 85vh;
+    padding-left: 50px;
+    transition: all .5s;
+
+    &:hover {
+        width: 60px;
+        padding-left: 0px;
+        right: 0rem;
+        transition: all .5s;
+    }
+
+    .top-btn {
+        opacity: .5;
+
+        &:hover {
+            opacity: 1;
+            transition: all .5s;
+        }
+    }
+
+    @media screen and (max-width: 576px) {
+        // display: none;
+        width: unset;
+        height: unset;
+        padding: unset;
+        bottom: 1rem;
+        right: .5rem;
+
+        &:hover {
+            width: unset;
+            // padding-left: 0px;
+            right: .5rem;
+            transition: all .5s;
+        }
+    }
+
+    @media screen and (max-width: 415px) {
+        &:hover {
+            opacity: .5;
+        }
+    }
+}
+
+
 @import './pages/homepage.scss';
 @import './pages/product.scss';
