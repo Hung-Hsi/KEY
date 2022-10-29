@@ -734,3 +734,20 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box .two 
 section.container div.main .mainProduct .productsBox .tabcontent .card-box .three {
   background-color: rgb(46, 56, 53);
 }
+section.container div.main .mainProduct .productsBox .pageLinks button.tablinks {
+  padding: 0.1rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+section.container div.main .mainProduct .productsBox .pageLinks button.tablinks:hover {
+  background-color: #555555;
+  color: white;
+}
+section.container div.main .mainProduct .productsBox .pageLinks button.tablinks.active {
+  border: 2px dashed #000;
+}
