@@ -1,5 +1,5 @@
 section.container .tittle {
-  padding: 3rem 4.5rem;
+  padding: 3rem 4.5rem 1rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
@@ -14,6 +14,7 @@ section.container div.main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 2rem;
 }
 section.container div.main .mainProduct {
   min-height: 100vh;
@@ -23,7 +24,7 @@ section.container div.main .mainProduct {
   display: flex;
 }
 section.container div.main .mainProduct .brandLinks {
-  margin: 0 2rem;
+  margin-right: 2rem;
   padding: 1.5rem 0.5rem;
   border: 1px solid #000;
   -webkit-box-flex: 0.5;
@@ -66,7 +67,7 @@ section.container div.main .mainProduct .productsBox {
           align-items: center;
 }
 section.container div.main .mainProduct .productsBox .tabcontent {
-  min-height: 80vh;
+  min-height: 90vh;
   width: 100%;
   display: none;
   border-top: none;
@@ -83,7 +84,6 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 320px;
 }
 section.container div.main .mainProduct .productsBox .tabcontent .card-box .card {
   margin: 1rem;
@@ -99,6 +99,18 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box .card
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+section.container div.main .mainProduct .productsBox .tabcontent .card-box .card img {
+  width: 200px;
+  height: 200px;
+  scale: 0.7;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+section.container div.main .mainProduct .productsBox .tabcontent .card-box .card span.describe {
+  max-width: 200px;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
 section.container div.main .mainProduct .productsBox .tabcontent .card-box .one {
   background-color: aquamarine;
 }
@@ -107,6 +119,9 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box .two 
 }
 section.container div.main .mainProduct .productsBox .tabcontent .card-box .three {
   background-color: rgb(46, 56, 53);
+}
+section.container div.main .mainProduct .productsBox .pageLinks {
+  margin-top: 1rem;
 }
 section.container div.main .mainProduct .productsBox .pageLinks button.tablinks {
   padding: 0.1rem 1rem;
