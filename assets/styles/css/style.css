@@ -19,6 +19,11 @@ html h2 {
   font-size: 1.5rem;
 }
 
+body {
+  background: url("/assets/styles/images/Pictures/skyscraper1.jpg") center/contain repeat;
+  z-index: -10;
+}
+
 /* scrollbar setting */
 /* width */
 ::-webkit-scrollbar {
@@ -666,6 +671,7 @@ section.container div.main .mainProduct .brandLinks {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url("/assets/styles/images/Pictures/com_a_bg01.png") center/cover no-repeat;
 }
 section.container div.main .mainProduct .brandLinks ul li {
   list-style-type: none;
@@ -747,7 +753,7 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box .thre
   background-color: rgb(46, 56, 53);
 }
 section.container div.main .mainProduct .productsBox .pageLinks {
-  margin-top: 1rem;
+  margin: 1rem 0.5rem;
 }
 section.container div.main .mainProduct .productsBox .pageLinks button.tablinks {
   padding: 0.1rem 1rem;

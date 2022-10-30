@@ -25,6 +25,7 @@ section.container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                background: url('/assets/styles/images/Pictures/com_a_bg01.png') center/cover no-repeat;
 
                 ul {
                     li {
@@ -106,7 +107,8 @@ section.container {
                 }
 
                 .pageLinks {
-                    margin-top: 1rem;
+                    margin: 1rem .5rem;
+
                     button.tablinks {
                         padding: .1rem 1rem;
                         text-align: center;
