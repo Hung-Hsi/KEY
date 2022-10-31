@@ -680,7 +680,6 @@ section.container div.main .mainProduct .brandLinks ul li a {
   text-decoration: none;
   color: black;
   font-size: 1.5rem;
-  font-weight: bold;
 }
 section.container div.main .mainProduct .brandLinks ul li a.active {
   color: rgb(47, 0, 255);
@@ -746,7 +745,7 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box .card
   font-size: 0.8rem;
 }
 section.container div.main .mainProduct .productsBox .pageLinks {
-  margin: 1rem 0.5rem;
+  margin: 2rem 0 0.5rem;
 }
 section.container div.main .mainProduct .productsBox .pageLinks button.tablinks {
   padding: 0.1rem 1rem;

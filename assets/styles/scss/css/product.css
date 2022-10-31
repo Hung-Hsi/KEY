@@ -114,7 +114,7 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box .card
   font-size: 0.8rem;
 }
 section.container div.main .mainProduct .productsBox .pageLinks {
-  margin: 1rem 0.5rem;
+  margin: 2rem 0 0.5rem;
 }
 section.container div.main .mainProduct .productsBox .pageLinks button.tablinks {
   padding: 0.1rem 1rem;
