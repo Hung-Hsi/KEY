@@ -29,11 +29,13 @@ section.container {
 
                 ul {
                     li {
-                        list-style-type: none;
+                        // list-style-type: disc;
+                        margin: 1rem;
 
                         a {
                             text-decoration: none;
                             color: black;
+                            font-size: 1.5rem;
 
                             &.active {
                                 color: rgb(47, 0, 255)
@@ -81,28 +83,26 @@ section.container {
                             img {
                                 width: 200px;
                                 height: 200px;
-                                scale: .7;
+                                scale: .8;
                                 object-fit: contain;
                             }
 
                             span.describe {
                                 max-width: 200px;
                                 padding: .5rem;
-                                font-size: .9rem;
+                                font-size: .8rem;
                             }
                         }
 
-                        .one {
-                            background-color: aquamarine;
-                        }
-
-                        .two {
-                            background-color: rgb(117, 141, 133);
-                        }
-
-                        .three {
-                            background-color: rgb(46, 56, 53);
-                        }
+                        // .one {
+                        //     background-color: aquamarine;
+                        // }
+                        // .two {
+                        //     background-color: rgb(117, 141, 133);
+                        // }
+                        // .three {
+                        //     background-color: rgb(46, 56, 53);
+                        // }
                     }
                 }
 

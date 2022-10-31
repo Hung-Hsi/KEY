@@ -674,11 +674,13 @@ section.container div.main .mainProduct .brandLinks {
   background: url("/assets/styles/images/Pictures/com_a_bg01.png") center/cover no-repeat;
 }
 section.container div.main .mainProduct .brandLinks ul li {
-  list-style-type: none;
+  margin: 1rem;
 }
 section.container div.main .mainProduct .brandLinks ul li a {
   text-decoration: none;
   color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 section.container div.main .mainProduct .brandLinks ul li a.active {
   color: rgb(47, 0, 255);
@@ -734,23 +736,14 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box .card
 section.container div.main .mainProduct .productsBox .tabcontent .card-box .card img {
   width: 200px;
   height: 200px;
-  scale: 0.7;
+  scale: 0.8;
   -o-object-fit: contain;
      object-fit: contain;
 }
 section.container div.main .mainProduct .productsBox .tabcontent .card-box .card span.describe {
   max-width: 200px;
   padding: 0.5rem;
-  font-size: 0.9rem;
-}
-section.container div.main .mainProduct .productsBox .tabcontent .card-box .one {
-  background-color: aquamarine;
-}
-section.container div.main .mainProduct .productsBox .tabcontent .card-box .two {
-  background-color: rgb(117, 141, 133);
-}
-section.container div.main .mainProduct .productsBox .tabcontent .card-box .three {
-  background-color: rgb(46, 56, 53);
+  font-size: 0.8rem;
 }
 section.container div.main .mainProduct .productsBox .pageLinks {
   margin: 1rem 0.5rem;
