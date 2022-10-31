@@ -20,7 +20,7 @@
         }
 
         .board {
-            width: 53vw;
+            width: 60vw;
             height: 500px;
             max-height: 850px;
             padding: 3rem 4.5rem;
@@ -37,6 +37,11 @@
 
         .news {
             background-color: rgb(95, 95, 95);
+            clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+
+            @media screen and (max-width: 992px) {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
 
             h2 {
                 font-weight: 400;
@@ -50,18 +55,32 @@
 
                 li {
                     padding: .5rem;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 1.5rem;
+
+                        &:hover {
+                            color: rgb(187, 247, 255);
+                        }
+                    }
                 }
             }
         }
 
         .about {
             background-color: rgb(197, 197, 197);
+            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
             position: absolute;
             right: 0;
             bottom: 0;
+            padding-left: calc(20%);
 
             @media screen and (max-width: 992px) {
                 position: unset;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                padding: 3rem 4.5rem;
             }
 
 
@@ -359,12 +378,16 @@
                     margin: .3rem 0;
                 }
 
-                .p2 {
-                    margin-top: -.5rem;
-                }
+                a.QRcode {
+                    &:hover {
+                        span.p2 {
+                            color: blue;
+                        }
+                    }
 
-                .open-time {
-                    text-align: right;
+                    img {
+                        margin-bottom: -.7rem;
+                    }
                 }
 
                 a {
@@ -372,12 +395,16 @@
                     color: black;
                 }
 
-                .QRcode:hover {
-
-                    img,
-                    .p2 {
-                        color: blue;
+                p {
+                    &:hover {
+                        a {
+                            color: blue;
+                        }
                     }
+                }
+
+                .open-time {
+                    text-align: right;
                 }
             }
         }

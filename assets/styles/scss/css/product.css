@@ -26,7 +26,7 @@ section.container div.main .mainProduct {
 section.container div.main .mainProduct .brandLinks {
   margin-right: 2rem;
   padding: 1.5rem 0.5rem;
-  border: 1px solid #000;
+  border: 3px solid rgba(0, 0, 0, 0.5);
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5 0 200px;
           flex: 0.5 0 200px;
@@ -111,7 +111,6 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box .card
 section.container div.main .mainProduct .productsBox .tabcontent .card-box .card span.describe {
   max-width: 200px;
   padding: 0.5rem;
-  font-size: 0.8rem;
 }
 section.container div.main .mainProduct .productsBox .pageLinks {
   margin: 2rem 0 0.5rem;
