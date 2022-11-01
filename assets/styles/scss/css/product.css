@@ -22,7 +22,7 @@ section.container div.main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 section.container div.main .mainProduct {
   min-height: 100vh;
@@ -52,7 +52,6 @@ section.container div.main .mainProduct .brandName {
   }
 }
 section.container div.main .mainProduct .brandLinks {
-  margin-right: 2rem;
   padding: 1.5rem 0.5rem;
   border: 3px solid rgba(0, 0, 0, 0.5);
   -webkit-box-flex: 0.5;
@@ -87,6 +86,12 @@ section.container div.main .mainProduct .brandLinks ul a li:hover {
   border: 1px solid #000;
   border-radius: 20px;
 }
+section.container div.main .mainProduct div.block {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5 6 8rem;
+          flex: 0.5 6 8rem;
+  height: 10px;
+}
 @media screen and (max-width: 865px) {
   section.container div.main .mainProduct .brandLinks {
     display: none;
@@ -107,8 +112,15 @@ section.container div.main .mainProduct .brandLinks ul a li:hover {
   section.container div.main .mainProduct .brandLinks ul li a {
     font-size: 1.2rem;
   }
+  section.container div.main .mainProduct div.block {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 2 100px;
+            flex: 0 2 100px;
+    background-color: #000;
+  }
 }
 section.container div.main .mainProduct .productsBox {
+  margin-left: auto;
   -webkit-box-flex: 5;
       -ms-flex: 5 1 650px;
           flex: 5 1 650px;
@@ -150,9 +162,9 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box {
       align-content: flex-start;
 }
 section.container div.main .mainProduct .productsBox .tabcontent .card-box .card {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 200px;
-          flex: 1 1 200px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 200px;
+          flex: 0 0 200px;
   max-height: 310px;
   margin: 1rem;
   display: -webkit-box;
