@@ -230,5 +230,13 @@ section.container {
                 }
             }
         }
+
+
+        @media screen and (max-width:470px) {
+            padding: 0;
+            div.block{
+                display: none;
+            }
+        }
     }
 }

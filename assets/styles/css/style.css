@@ -907,3 +907,11 @@ section.container div.main .pageLinks button.tablinks:hover {
 section.container div.main .pageLinks button.tablinks.active {
   border: 2px dashed #000;
 }
+@media screen and (max-width: 470px) {
+  section.container div.main {
+    padding: 0;
+  }
+  section.container div.main div.block {
+    display: none;
+  }
+}
