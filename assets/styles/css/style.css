@@ -20,7 +20,7 @@ html h2 {
 }
 
 body {
-  background: url("/assets/styles/images/Pictures/skyscraper1.jpg") center/contain repeat;
+  background: url("//assets/styles/images/Pictures/skyscraper1.jpg") center/contain repeat;
   z-index: -10;
 }
 
@@ -735,7 +735,7 @@ section.container div.main .mainProduct .brandLinks {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("/assets/styles/images/Pictures/com_a_bg01.png") center/cover no-repeat;
+  background: url("//assets/styles/images/Pictures/com_a_bg01.png") center/cover no-repeat;
 }
 section.container div.main .mainProduct .brandLinks ul li {
   list-style-type: none;
