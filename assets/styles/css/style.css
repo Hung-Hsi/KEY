@@ -722,7 +722,10 @@ section.container div.main .mainProduct .brandName {
 }
 section.container div.main .mainProduct .brandLinks {
   padding: 1.5rem 0.5rem;
-  border: 3px solid rgba(0, 0, 0, 0.5);
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #22005c, #b6b6b6);
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5 0 200px;
           flex: 0.5 0 200px;
@@ -768,7 +771,10 @@ section.container div.main .mainProduct div.block {
     top: 5.5rem;
     left: 12rem;
     z-index: 5;
-    border: 3px dashed #000;
+    border: 10px dashed;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to bottom, #ffd103, #000000);
     padding: 0;
     width: 10rem;
   }
