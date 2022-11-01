@@ -376,18 +376,18 @@ span.describe {
     padding: 3rem 4.5rem;
   }
 }
+@media screen and (max-width: 576px) {
+  #about .about {
+    padding: 3rem 1.5rem;
+  }
+}
 #about .about .text-box {
   padding: 0.5rem 1rem 1rem 1rem;
   position: relative;
 }
 #about .about .text-box .text {
   overflow-y: auto;
-  height: 6.5rem;
-}
-@media screen and (max-width: 576px) {
-  #about .about .text-box .text {
-    height: 5.5rem;
-  }
+  height: 7rem;
 }
 #about .about .serve {
   padding: 1rem 0;
@@ -401,6 +401,9 @@ span.describe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 #about .about .serve .keys,
 #about .about .serve .others {
@@ -413,11 +416,10 @@ span.describe {
 }
 #about .about .serve .keys .serve-item,
 #about .about .serve .others .serve-item {
+  white-space: nowrap;
   margin: 0.25rem 0.5rem;
-  width: 120px;
-  height: 50px;
+  padding: 0.5rem 1rem;
   text-align: center;
-  line-height: 50px;
   border-radius: 2rem;
   background-color: #fff;
   cursor: pointer;
@@ -427,17 +429,6 @@ span.describe {
   background-color: rgba(255, 255, 255, 0.8);
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-@media screen and (max-width: 576px) {
-  #about .about .serve .keys .serve-item,
-#about .about .serve .others .serve-item {
-    width: 100px;
-    margin: 0.5rem;
-  }
-  #about .about .serve .keys .door,
-#about .about .serve .others .door {
-    width: 120px;
-  }
 }
 #about .about .serve .others {
   -ms-flex-wrap: wrap;
