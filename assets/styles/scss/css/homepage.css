@@ -38,6 +38,8 @@
 }
 #about .news {
   background-color: rgb(95, 95, 95);
+  opacity: 1;
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, rgb(95, 95, 95) 10px), repeating-linear-gradient(rgba(0, 0, 0, 0.3333333333), #000000);
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   color: #ffffff;
@@ -67,6 +69,8 @@
 }
 #about .about {
   background-color: rgb(197, 197, 197);
+  opacity: 1;
+  background-image: repeating-radial-gradient(circle at 100% 0, transparent 0, rgb(197, 197, 197) 10px), repeating-linear-gradient(rgba(226, 254, 255, 0.3333333333), #e2feff);
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
           clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
   position: absolute;

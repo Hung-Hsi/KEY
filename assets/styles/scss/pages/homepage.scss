@@ -36,7 +36,10 @@
         }
 
         .news {
-            background-color: rgb(95, 95, 95);
+            // background-color: rgb(95, 95, 95);
+            background-color: rgba(95, 95, 95, 1);
+            opacity: 1;
+            background-image: repeating-radial-gradient(circle at 0 0, transparent 0, rgba(95, 95, 95, 1) 10px), repeating-linear-gradient(#00000055, #000000);
             clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 
             @media screen and (max-width: 992px) {
@@ -70,7 +73,10 @@
         }
 
         .about {
-            background-color: rgb(197, 197, 197);
+            // background-color: rgb(197, 197, 197);
+            background-color: rgba(197, 197, 197, 1);
+            opacity: 1;
+            background-image: repeating-radial-gradient(circle at 100% 0, transparent 0, rgba(197, 197, 197, 1) 10px), repeating-linear-gradient(#e2feff55, #e2feff);
             clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
             position: absolute;
             right: 0;
