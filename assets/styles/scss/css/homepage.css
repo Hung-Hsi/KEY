@@ -22,6 +22,7 @@
 }
 #about .board {
   width: 60vw;
+  max-width: 1000px;
   height: 500px;
   max-height: 850px;
   padding: 3rem 4.5rem;
@@ -39,7 +40,7 @@
 #about .news {
   background-color: rgb(95, 95, 95);
   opacity: 1;
-  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, rgb(95, 95, 95) 10px), repeating-linear-gradient(rgba(0, 0, 0, 0.3333333333), #000000);
+  background-image: repeating-radial-gradient(circle at 0 100%, transparent 0, rgb(95, 95, 95) 10px), repeating-linear-gradient(rgba(0, 0, 0, 0.3333333333), #000000);
   -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
           clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   color: #ffffff;

@@ -4,7 +4,6 @@
 
         @media screen and (max-width: 576px) {
             height: 30vh;
-            // width: calc(100vw);
         }
     }
 
@@ -21,13 +20,13 @@
 
         .board {
             width: 60vw;
+            max-width: 1000px;
             height: 500px;
             max-height: 850px;
             padding: 3rem 4.5rem;
 
             @media screen and (max-width: 992px) {
                 width: unset;
-                // height: unset;
             }
 
             @media screen and (max-width: 576px) {
@@ -36,10 +35,9 @@
         }
 
         .news {
-            // background-color: rgb(95, 95, 95);
             background-color: rgba(95, 95, 95, 1);
             opacity: 1;
-            background-image: repeating-radial-gradient(circle at 0 0, transparent 0, rgba(95, 95, 95, 1) 10px), repeating-linear-gradient(#00000055, #000000);
+            background-image: repeating-radial-gradient(circle at 0 100%, transparent 0, rgba(95, 95, 95, 1) 10px), repeating-linear-gradient(#00000055, #000000);
             clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 
             @media screen and (max-width: 992px) {
@@ -93,7 +91,6 @@
             .text-box {
                 padding: .5rem 1rem 1rem 1rem;
                 position: relative;
-                // font-size: 1.3rem;
 
                 .text {
                     overflow-y: auto;
@@ -131,7 +128,6 @@
                         margin: .5rem;
                         width: 120px;
                         height: 50px;
-                        // font-size: 1.2rem;
                         text-align: center;
                         line-height: 50px;
                         border-radius: 2rem;
@@ -162,7 +158,6 @@
                 }
 
                 a {
-                    // font-size: 1.2rem;
                     align-self: flex-end;
                     text-decoration: none;
                     color: rgba(0, 0, 255, 1);
@@ -223,8 +218,6 @@
 
         .tabcontent {
             display: none;
-            // padding: 2rem 0rem;
-            // border: 1px solid #ccc;
             border-top: none;
             justify-content: center;
             text-align: center;
@@ -237,7 +230,6 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                // border: 1px solid #000;
                 overflow: auto;
                 height: 320px;
 
@@ -245,8 +237,6 @@
                     margin: 1rem;
                     display: flex;
                     flex-direction: column;
-                    // width: 20vw;
-                    // height: 200px;
 
                     &:hover {
                         transform: scale(1.05);
@@ -313,8 +303,6 @@
                 height: 100px;
                 overflow: hidden;
                 position: relative;
-                // margin: auto;
-                // width: 960px;
 
                 &::before,
                 &::after {
