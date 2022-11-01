@@ -118,40 +118,56 @@ nav {
         padding-left: 1rem;
         justify-items: flex-end;
 
+        
         @media screen and (max-width:865px) {
             display: none;
-            // width: 100vw;
+            padding: 0;
             flex-direction: column;
             position: absolute;
             top: 4.5rem;
             right: 0rem;
             background-color: rgba(255, 255, 255, 1);
             box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
+
+            border-width: 5px;
+            border-style: solid;
+            border-image:
+                linear-gradient(to bottom,
+                    rgb(255, 255, 255),
+                    rgb(36, 36, 36)) 1 100%;
+    
+            width: calc(100vw - 8.5px);
         }
 
-        li {
-            display: flex;
 
-            a {
-                padding: 1.5rem .75rem;
-                color: rgb(0, 0, 0);
-                text-decoration: none;
-                border-radius: 2rem;
-                transition: all .5s ease;
+        a {
+            color: rgb(0, 0, 0);
+            padding: 1.5rem 0.75rem;
+            text-decoration: none;
+            border-radius: 2rem;
+            transition: all .5s ease;
+            font-size: 1.2rem;
+
+            &:hover {
+                color: rgb(47, 0, 255);
+            }
+
+            @media screen and (max-width:865px) {
+                width: calc(100vw - 8.5px - (2 * 5px));
+                border-radius: unset;
+
+                li {
+                    text-align: center;
+                    justify-content: center;
+                }
 
                 &:hover {
-                    color: rgb(47, 0, 255);
+                    background-color: rgba(245, 245, 245, 01);
                 }
+            }
 
-                @media screen and (max-width:865px) {
-                    width: 100vw;
-                    text-align: center;
-                    border-radius: unset;
-
-                    &:hover {
-                        background-color: rgba(245, 245, 245, 01);
-                    }
-                }
+            li {
+                display: flex;
             }
         }
     }

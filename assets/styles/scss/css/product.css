@@ -74,7 +74,7 @@ section.container div.main .mainProduct .brandLinks {
 section.container div.main .mainProduct .brandLinks ul a {
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 section.container div.main .mainProduct .brandLinks ul a.active {
   color: rgb(47, 0, 255);
@@ -111,11 +111,11 @@ section.container div.main .mainProduct div.block {
   section.container div.main .mainProduct .brandLinks ul {
     padding: 0.5rem;
   }
-  section.container div.main .mainProduct .brandLinks ul li {
-    padding: 0.5rem 1rem;
-  }
-  section.container div.main .mainProduct .brandLinks ul li a {
+  section.container div.main .mainProduct .brandLinks ul a {
     font-size: 1.2rem;
+  }
+  section.container div.main .mainProduct .brandLinks ul a li {
+    padding: 0.5rem 1rem;
   }
   section.container div.main .mainProduct div.block {
     -webkit-box-flex: 0;

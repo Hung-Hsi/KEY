@@ -126,6 +126,7 @@ nav .nav-list {
 @media screen and (max-width: 865px) {
   nav .nav-list {
     display: none;
+    padding: 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -136,33 +137,45 @@ nav .nav-list {
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
             box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
+    border-width: 5px;
+    border-style: solid;
+    -o-border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(36, 36, 36)) 1 100%;
+       border-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(36, 36, 36))) 1 100%;
+       border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(36, 36, 36)) 1 100%;
+    width: calc(100vw - 8.5px);
   }
 }
-nav .nav-list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-nav .nav-list li a {
-  padding: 1.5rem 0.75rem;
+nav .nav-list a {
   color: rgb(0, 0, 0);
+  padding: 1.5rem 0.75rem;
   text-decoration: none;
   border-radius: 2rem;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  font-size: 1.2rem;
 }
-nav .nav-list li a:hover {
+nav .nav-list a:hover {
   color: rgb(47, 0, 255);
 }
 @media screen and (max-width: 865px) {
-  nav .nav-list li a {
-    width: 100vw;
-    text-align: center;
+  nav .nav-list a {
+    width: calc(100vw - 8.5px - 10px);
     border-radius: unset;
   }
-  nav .nav-list li a:hover {
+  nav .nav-list a li {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .nav-list a:hover {
     background-color: rgb(245, 245, 245);
   }
+}
+nav .nav-list a li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer {
@@ -369,7 +382,12 @@ span.describe {
 }
 #about .about .text-box .text {
   overflow-y: auto;
-  height: 5rem;
+  height: 6.5rem;
+}
+@media screen and (max-width: 576px) {
+  #about .about .text-box .text {
+    height: 5.5rem;
+  }
 }
 #about .about .serve {
   padding: 1rem 0;
@@ -395,7 +413,7 @@ span.describe {
 }
 #about .about .serve .keys .serve-item,
 #about .about .serve .others .serve-item {
-  margin: 0.5rem;
+  margin: 0.25rem 0.5rem;
   width: 120px;
   height: 50px;
   text-align: center;
@@ -744,7 +762,7 @@ section.container div.main .mainProduct .brandLinks {
 section.container div.main .mainProduct .brandLinks ul a {
   text-decoration: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 section.container div.main .mainProduct .brandLinks ul a.active {
   color: rgb(47, 0, 255);
@@ -781,11 +799,11 @@ section.container div.main .mainProduct div.block {
   section.container div.main .mainProduct .brandLinks ul {
     padding: 0.5rem;
   }
-  section.container div.main .mainProduct .brandLinks ul li {
-    padding: 0.5rem 1rem;
-  }
-  section.container div.main .mainProduct .brandLinks ul li a {
+  section.container div.main .mainProduct .brandLinks ul a {
     font-size: 1.2rem;
+  }
+  section.container div.main .mainProduct .brandLinks ul a li {
+    padding: 0.5rem 1rem;
   }
   section.container div.main .mainProduct div.block {
     -webkit-box-flex: 0;

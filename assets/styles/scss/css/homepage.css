@@ -93,7 +93,12 @@
 }
 #about .about .text-box .text {
   overflow-y: auto;
-  height: 5rem;
+  height: 6.5rem;
+}
+@media screen and (max-width: 576px) {
+  #about .about .text-box .text {
+    height: 5.5rem;
+  }
 }
 #about .about .serve {
   padding: 1rem 0;
@@ -119,7 +124,7 @@
 }
 #about .about .serve .keys .serve-item,
 #about .about .serve .others .serve-item {
-  margin: 0.5rem;
+  margin: 0.25rem 0.5rem;
   width: 120px;
   height: 50px;
   text-align: center;

@@ -89,12 +89,17 @@
 
 
             .text-box {
+                // min-height: 150px;
                 padding: .5rem 1rem 1rem 1rem;
                 position: relative;
 
                 .text {
                     overflow-y: auto;
-                    height: 5rem;
+                    height: 6.5rem;
+
+                    @media screen and (max-width: 576px) {
+                        height: 5.5rem;
+                    }
                 }
 
                 // .about-btn {
@@ -125,7 +130,7 @@
                     justify-content: center;
 
                     .serve-item {
-                        margin: .5rem;
+                        margin: .25rem .5rem;
                         width: 120px;
                         height: 50px;
                         text-align: center;
