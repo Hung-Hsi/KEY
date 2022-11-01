@@ -861,6 +861,9 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box .card
 }
 @media screen and (max-width: 865px) {
   section.container div.main .mainProduct .productsBox .tabcontent .card-box .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 180px;
+            flex: 0 0 180px;
     margin: 0.5rem;
   }
   section.container div.main .mainProduct .productsBox .tabcontent .card-box .card img {
@@ -875,6 +878,9 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box .card
 }
 @media screen and (max-width: 576px) {
   section.container div.main .mainProduct .productsBox .tabcontent .card-box .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 165px;
+            flex: 0 0 165px;
     margin: 0.3rem;
   }
   section.container div.main .mainProduct .productsBox .tabcontent .card-box .card img {
@@ -885,6 +891,20 @@ section.container div.main .mainProduct .productsBox .tabcontent .card-box .card
   section.container div.main .mainProduct .productsBox .tabcontent .card-box .card span.describe,
 section.container div.main .mainProduct .productsBox .tabcontent .card-box .card p {
     max-width: 165px;
+  }
+}
+@media screen and (max-width: 400px) {
+  section.container div.main .mainProduct .productsBox .tabcontent .card-box .card {
+    margin: 0;
+  }
+  section.container div.main .mainProduct .productsBox .tabcontent .card-box .card img {
+    width: 150px;
+    height: 150px;
+    scale: 1;
+  }
+  section.container div.main .mainProduct .productsBox .tabcontent .card-box .card span.describe,
+section.container div.main .mainProduct .productsBox .tabcontent .card-box .card p {
+    max-width: 150px;
   }
 }
 section.container div.main .pageLinks {
@@ -910,8 +930,5 @@ section.container div.main .pageLinks button.tablinks.active {
 @media screen and (max-width: 470px) {
   section.container div.main {
     padding: 0;
-  }
-  section.container div.main div.block {
-    display: none;
   }
 }
