@@ -737,7 +737,7 @@ section.container div.main .mainProduct .brandLinks {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("/assets/styles/images/Pictures/com_a_bg01.png") center/cover no-repeat;
+  background: center/cover no-repeat;
 }
 section.container div.main .mainProduct .brandLinks ul a {
   text-decoration: none;
