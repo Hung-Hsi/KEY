@@ -137,45 +137,48 @@ nav .nav-list {
     background-color: rgb(255, 255, 255);
     -webkit-box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
             box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
-    border-width: 5px;
+    border-width: 8px;
     border-style: solid;
     -o-border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(36, 36, 36)) 1 100%;
        border-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(36, 36, 36))) 1 100%;
        border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(36, 36, 36)) 1 100%;
-    width: calc(100vw - 8.5px);
+    width: calc(100vw - 8px);
   }
 }
-nav .nav-list a {
-  color: rgb(0, 0, 0);
-  padding: 1.5rem 0.75rem;
-  text-decoration: none;
+nav .nav-list li {
   border-radius: 2rem;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  font-size: 1.2rem;
-}
-nav .nav-list a:hover {
-  color: rgb(47, 0, 255);
-}
-@media screen and (max-width: 865px) {
-  nav .nav-list a {
-    width: calc(100vw - 8.5px - 10px);
-    border-radius: unset;
-  }
-  nav .nav-list a li {
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  nav .nav-list a:hover {
-    background-color: rgb(245, 245, 245);
-  }
-}
-nav .nav-list a li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav .nav-list li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-align: center;
+  padding: 1.5rem 0.75rem;
+  width: 100%;
+  font-size: 1.2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+nav .nav-list li a:hover {
+  color: rgb(47, 0, 255);
+}
+@media screen and (max-width: 865px) {
+  nav .nav-list li {
+    width: calc(100vw - 8px - 16px);
+    border-radius: unset;
+  }
+  nav .nav-list li:hover {
+    background-color: rgb(245, 245, 245);
+  }
 }
 
 footer {

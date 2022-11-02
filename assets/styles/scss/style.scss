@@ -118,7 +118,7 @@ nav {
         padding-left: 1rem;
         justify-items: flex-end;
 
-        
+
         @media screen and (max-width:865px) {
             display: none;
             padding: 0;
@@ -129,45 +129,44 @@ nav {
             background-color: rgba(255, 255, 255, 1);
             box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
 
-            border-width: 5px;
+            border-width: 8px;
             border-style: solid;
             border-image:
                 linear-gradient(to bottom,
                     rgb(255, 255, 255),
                     rgb(36, 36, 36)) 1 100%;
-    
-            width: calc(100vw - 8.5px);
+
+            width: calc(100vw - 8px);
         }
 
-
-        a {
-            color: rgb(0, 0, 0);
-            padding: 1.5rem 0.75rem;
-            text-decoration: none;
+        li {
             border-radius: 2rem;
             transition: all .5s ease;
-            font-size: 1.2rem;
+            display: flex;
+            justify-content: center;
 
-            &:hover {
-                color: rgb(47, 0, 255);
+            a {
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                text-align: center;
+                padding: 1.5rem 0.75rem;
+                width: 100%;
+                font-size: 1.2rem;
+                user-select: none;
+
+                &:hover {
+                    color: rgb(47, 0, 255);
+                }
+
             }
 
             @media screen and (max-width:865px) {
-                width: calc(100vw - 8.5px - (2 * 5px));
+                width: calc(100vw - 8px - (2 * 8px));
                 border-radius: unset;
-
-                li {
-                    text-align: center;
-                    justify-content: center;
-                }
 
                 &:hover {
                     background-color: rgba(245, 245, 245, 01);
                 }
-            }
-
-            li {
-                display: flex;
             }
         }
     }
