@@ -142,7 +142,7 @@ nav .nav-list {
     -o-border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(36, 36, 36)) 1 100%;
        border-image: -webkit-gradient(linear, left top, left bottom, from(rgb(255, 255, 255)), to(rgb(36, 36, 36))) 1 100%;
        border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(36, 36, 36)) 1 100%;
-    width: calc(100vw - 8px);
+    width: 100%;
   }
 }
 nav .nav-list li {

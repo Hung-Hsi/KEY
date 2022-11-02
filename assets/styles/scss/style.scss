@@ -136,7 +136,8 @@ nav {
                     rgb(255, 255, 255),
                     rgb(36, 36, 36)) 1 100%;
 
-            width: calc(100vw - 8px);
+            // width: calc(100vw - 8px);
+            width: 100%;
         }
 
         li {
