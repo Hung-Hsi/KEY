@@ -99,14 +99,14 @@ section.container div.main .mainProduct div.block {
   section.container div.main .mainProduct .brandLinks {
     display: none;
     position: absolute;
-    top: 5.5rem;
-    left: 12rem;
+    top: 5.3rem;
+    left: 11.3rem;
     z-index: 5;
     border-image-slice: 1;
     border-width: 5px;
     border-image-source: linear-gradient(to bottom, #c4a000, #3f3f3f);
     padding: 0;
-    width: 10rem;
+    width: 11.5rem;
   }
   section.container div.main .mainProduct .brandLinks ul {
     padding: 0.5rem;
