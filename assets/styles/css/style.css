@@ -567,8 +567,8 @@ span.describe {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1039.07px);
-            transform: translateX(-1039.07px);
+    -webkit-transform: translateX(-1126.85px);
+            transform: translateX(-1126.85px);
   }
 }
 @keyframes scroll {
@@ -577,8 +577,8 @@ span.describe {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1039.07px);
-            transform: translateX(-1039.07px);
+    -webkit-transform: translateX(-1126.85px);
+            transform: translateX(-1126.85px);
   }
 }
 #brand .pd-brand .slider {
@@ -614,11 +614,18 @@ span.describe {
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  width: 750px;
+  width: 1000px;
 }
 #brand .pd-brand .slider .slide-track .slide {
   height: 100px;
   width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
 }
 #brand .pd-brand .slider .slide-track .slide:hover {
   -webkit-transform: scale(1.05);
