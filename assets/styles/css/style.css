@@ -543,7 +543,7 @@ span.describe {
 }
 @media screen and (max-width: 576px) {
   #brand {
-    padding: 3rem 0rem;
+    padding: 3rem 2%;
   }
   #brand h2 {
     padding: 0rem 1.5rem;
@@ -587,6 +587,7 @@ span.describe {
   height: 100px;
   overflow: hidden;
   position: relative;
+  background-color: #fff;
 }
 #brand .pd-brand .slider::before, #brand .pd-brand .slider::after {
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 248, 183, 0.2)), to(rgba(255, 255, 255, 0)));
@@ -625,7 +626,6 @@ span.describe {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
 }
 #brand .pd-brand .slider .slide-track .slide:hover {
   -webkit-transform: scale(1.05);
