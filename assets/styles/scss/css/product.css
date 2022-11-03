@@ -36,9 +36,10 @@ section.container div.main .mainProduct #brandName {
 }
 section.container div.main .mainProduct .brandName {
   display: none;
+  padding: 0.5rem;
   position: absolute;
-  top: 3.3rem;
-  left: 12rem;
+  top: 2.8rem;
+  left: 11.5rem;
   color: rgb(47, 0, 255);
   cursor: pointer;
   -webkit-user-select: none;
@@ -73,15 +74,15 @@ section.container div.main .mainProduct .brandLinks {
 }
 section.container div.main .mainProduct .brandLinks ul li {
   list-style-type: none;
-  width: 100%;
-  padding: 1rem;
-  margin: 0 0.1rem;
 }
 section.container div.main .mainProduct .brandLinks ul li:hover {
   border: 1px solid #000;
   border-radius: 20px;
 }
 section.container div.main .mainProduct .brandLinks ul li a {
+  display: block;
+  padding: 1rem;
+  width: 100%;
   text-decoration: none;
   color: black;
   font-size: 1.2rem;
@@ -112,11 +113,10 @@ section.container div.main .mainProduct div.block {
   section.container div.main .mainProduct .brandLinks ul {
     padding: 0.5rem;
   }
-  section.container div.main .mainProduct .brandLinks ul a {
+  section.container div.main .mainProduct .brandLinks ul li a {
+    width: 100%;
+    padding: 0.7rem 1.5rem;
     font-size: 1.2rem;
-  }
-  section.container div.main .mainProduct .brandLinks ul a li {
-    padding: 0.5rem 1rem;
   }
   section.container div.main .mainProduct div.block {
     -webkit-box-flex: 0;
