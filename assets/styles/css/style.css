@@ -766,10 +766,13 @@ section.container div.main .mainProduct .brandLinks {
 }
 section.container div.main .mainProduct .brandLinks ul li {
   list-style-type: none;
+  border: 3px dotted rgba(0, 0, 0, 0.1);
 }
 section.container div.main .mainProduct .brandLinks ul li:hover {
-  border: 1px solid #000;
-  border-radius: 20px;
+  border: 3px dotted #000;
+  border-radius: 30px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 section.container div.main .mainProduct .brandLinks ul li a {
   display: -webkit-box;
