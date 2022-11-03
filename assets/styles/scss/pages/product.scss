@@ -55,6 +55,17 @@ section.container {
                 align-items: center;
 
                 ul {
+                    li {
+                        list-style-type: none;
+                        width: 100%;
+                        padding: 1rem;
+                        margin: 0 .1rem;
+
+                        &:hover {
+                            border: 1px solid #000;
+                            border-radius: 20px;
+                        }
+
                     a {
                         text-decoration: none;
                         color: black;
@@ -63,17 +74,6 @@ section.container {
                         &.active {
                             color: rgb(47, 0, 255)
                         }
-
-                        li {
-                            list-style-type: none;
-                            width: 100%;
-                            padding: 1rem;
-                            margin: 0 .1rem;
-
-                            &:hover {
-                                border: 1px solid #000;
-                                border-radius: 20px;
-                            }
                         }
                     }
                 }
