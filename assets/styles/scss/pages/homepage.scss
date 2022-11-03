@@ -280,7 +280,7 @@
             }
 
             $animationSpeed: 20s;
-            $brandTotalWidth: -1126.85px; //一輪品牌的總長度
+            $brandTotalWidth: -1146.74px; //一輪品牌的總長度
 
             @keyframes scroll {
                 0% {
@@ -295,7 +295,6 @@
 
             // Styling
             .slider {
-                // background: rgb(255, 246, 161);
                 box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
                 height: 100px;
                 overflow: hidden;
@@ -326,6 +325,7 @@
                 .slide-track {
                     animation: scroll $animationSpeed linear infinite;
                     display: flex;
+                    align-items: center;
                     width: 100vw;
                     width: calc(250px * 4);
                     
