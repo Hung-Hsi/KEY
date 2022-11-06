@@ -766,7 +766,7 @@ section.container div.main .mainProduct .brandLinks {
 }
 section.container div.main .mainProduct .brandLinks ul li {
   list-style-type: none;
-  border: 3px dotted rgba(0, 0, 0, 0.1);
+  border: 3px dotted rgba(0, 0, 0, 0.05);
 }
 section.container div.main .mainProduct .brandLinks ul li:hover {
   border: 3px dotted #000;
