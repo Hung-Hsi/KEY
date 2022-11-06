@@ -766,13 +766,21 @@ section.container div.main .mainProduct .brandLinks {
 }
 section.container div.main .mainProduct .brandLinks ul li {
   list-style-type: none;
-  border: 3px dashed rgba(0, 0, 0, 0.1);
+  border: 3px dotted rgba(0, 0, 0, 0.1);
 }
 section.container div.main .mainProduct .brandLinks ul li:hover {
-  border: 3px dashed #000;
+  border: 3px dotted #000;
   border-radius: 30px;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+@media screen and (max-width: 576px) {
+  section.container div.main .mainProduct .brandLinks ul li {
+    border: 3px solid rgba(0, 0, 0, 0);
+  }
+  section.container div.main .mainProduct .brandLinks ul li:hover {
+    border: 3px solid rgba(0, 0, 0, 0);
+  }
 }
 section.container div.main .mainProduct .brandLinks ul li a {
   display: -webkit-box;
