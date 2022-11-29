@@ -49,7 +49,7 @@ nav {
   height: 87px;
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 5;
   -webkit-box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
           box-shadow: 3px 3px 5px 1px rgb(107, 107, 107);
   background-color: rgba(255, 255, 255, 0.9);
@@ -567,8 +567,8 @@ span.describe {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1146.74px);
-            transform: translateX(-1146.74px);
+    -webkit-transform: translateX(-1811.05px);
+            transform: translateX(-1811.05px);
   }
 }
 @keyframes scroll {
@@ -577,8 +577,8 @@ span.describe {
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1146.74px);
-            transform: translateX(-1146.74px);
+    -webkit-transform: translateX(-1811.05px);
+            transform: translateX(-1811.05px);
   }
 }
 #brand .pd-brand .slider {
@@ -609,8 +609,8 @@ span.describe {
   top: 0;
 }
 #brand .pd-brand .slider .slide-track {
-  -webkit-animation: scroll 20s linear infinite;
-          animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 25s linear infinite;
+          animation: scroll 25s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -817,7 +817,7 @@ section.container div.main .mainProduct div.block {
     position: absolute;
     top: 5.3rem;
     left: 11.3rem;
-    z-index: 5;
+    z-index: 4;
     background-color: #fff;
     border-image-slice: 1;
     border-width: 5px;

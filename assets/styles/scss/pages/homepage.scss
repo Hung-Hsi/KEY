@@ -279,8 +279,9 @@
                 background: linear-gradient(to right, rgba(255, 248, 183, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
             }
 
-            $animationSpeed: 20s;
-            $brandTotalWidth: -1146.74px; //一輪品牌的總長度
+            $animationSpeed: 25s;
+            $brandTotalWidth: -1811.05px;
+            //(-1146.74 - 664.31)  //一輪品牌的總長度
 
             @keyframes scroll {
                 0% {

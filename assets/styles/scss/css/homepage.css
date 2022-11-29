@@ -275,8 +275,8 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1146.74px);
-            transform: translateX(-1146.74px);
+    -webkit-transform: translateX(-1811.05px);
+            transform: translateX(-1811.05px);
   }
 }
 @keyframes scroll {
@@ -285,8 +285,8 @@
             transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-1146.74px);
-            transform: translateX(-1146.74px);
+    -webkit-transform: translateX(-1811.05px);
+            transform: translateX(-1811.05px);
   }
 }
 #brand .pd-brand .slider {
@@ -317,8 +317,8 @@
   top: 0;
 }
 #brand .pd-brand .slider .slide-track {
-  -webkit-animation: scroll 20s linear infinite;
-          animation: scroll 20s linear infinite;
+  -webkit-animation: scroll 25s linear infinite;
+          animation: scroll 25s linear infinite;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
