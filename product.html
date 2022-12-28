@@ -250,25 +250,12 @@
                         </div>
                     </div>
 
-                    <!-- <div id="page3" class="tabcontent">
-                        <div class="card-box">
-                            <div class="card three">
-                                <img src="./assets/styles/images/Pictures/EZSET/PL1R0S10.jpg">
-                                <p>PL1R0S10</p>
-                                <span class="describe">密碼/鑰匙/遙控器(訂製)三合一</span>
-                            </div>
-                        </div>
-                    </div> -->
-
                     <div class="pageLinks">
                         <button class="tablinks active" onclick="pdItem(event, 'page1')"><span> 1 </span>
                         </button>
                         <button class="tablinks" onclick="pdItem(event, 'page2')"><span> 2 </span>
                         </button>
-                        <!-- <button class="tablinks" onclick="pdItem(event, 'page3')"><span> 3 </span>
-                        </button> -->
                     </div>
-
                 </div>
             </div>
         </div>
@@ -299,27 +286,11 @@
     </footer>
 
     <!-- function pdItem -->
-    <script>function pdItem(evt, itemName) {
-            // Declare all variables
-            let i, tabcontent, tablinks;
-
-            // Get all elements with class="tabcontent" and hide them
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Get all elements with class="tablinks" and remove the class "active"
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show the current tab, and add an "active" class to the button that opened the tab
-            document.getElementById(itemName).style.display = "flex";
-            evt.currentTarget.className += " active";
-        }
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="/assets/js/jquery-3.6.3.min.js>')
     </script>
+    <script src="/assets/js/pdItem.js"></script>
 </body>
 
 </html>
