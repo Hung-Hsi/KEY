@@ -461,7 +461,9 @@
 
             // Show the current tab, and add an "active" class to the button that opened the tab
             document.getElementById(itemName).style.display = "flex";
-            evt.currentTarget.className += " active";
+            if (evt.currentTarget.className.indexOf("active") === -1) {
+                    evt.currentTarget.className += " active";
+                }
         }
     </script>
 
